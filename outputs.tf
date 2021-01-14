@@ -1,3 +1,3 @@
-output "naming" {
+output "names" {
     value = module.naming
 }
