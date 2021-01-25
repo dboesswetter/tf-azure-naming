@@ -4,6 +4,7 @@ locals {
 }
 
 module "naming" {
-  source  = "Azure/naming/azurerm"
+#  source  = "Azure/naming/azurerm"
+  source  = "github.com/Azure/terraform-azurerm-naming"
   suffix = concat( [local.region], var.name, [var.stage] )
 }
